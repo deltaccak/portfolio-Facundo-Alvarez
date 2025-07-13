@@ -91,8 +91,14 @@ p {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .project-card {
@@ -114,7 +120,7 @@ p {
   padding: 8px 16px;
   background-color: var(--accent-color);
   color: var(--text-color);
-  border-radius: 5px;
+  border-radius: 7px;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
