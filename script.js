@@ -3,7 +3,6 @@
     let phraseIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
-
     function type() {
       const currentPhrase = phrases[phraseIndex];
       if (isDeleting) {
@@ -21,8 +20,6 @@
       setTimeout(type, isDeleting ? 50 : 100);
     }
     type();
-
-    // Scroll animation
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -30,10 +27,7 @@
         }
       });
     }, { threshold: 0.2 });
-
     document.querySelectorAll('.card').forEach(card => observer.observe(card));
-
-    // Go-top button
     const goTop = document.getElementById('go-top');
     window.addEventListener('scroll', () => {
       goTop.classList.toggle('show', window.scrollY > 200);
