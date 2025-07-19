@@ -1,5 +1,5 @@
  const typing = document.getElementById('typing');
-    const phrases = ["Desarrollador Web", "Desarrollar de Bots de Discord"];
+    const phrases = ["Desarrollador Web", "Desarrollador de Bots de Discord"];
     let phraseIndex = 0;
     let charIndex = 0;
     let isDeleting = false;

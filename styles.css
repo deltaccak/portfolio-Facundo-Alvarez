@@ -15,7 +15,22 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+* {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
 
+
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent; 
+}
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -47,9 +62,14 @@ header {
   border-radius: 50%;
   border: 3px solid var(--accent-color);
   object-fit: cover;
+  object-position: left top; 
   margin-bottom: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  pointer-events: none; /
 }
-
 h1 {
   font-size: 2.5rem;
   color: var(--accent-color);
