@@ -3,85 +3,436 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Facundo Alvarez | Portfolio</title>
-  <meta name="description" content="Portfolio profesional de Facundo Alvarez, desarrollador web y creador de bots de Discord">
+  <title>Facundo Alvarez | Desarrollador Web</title>
+  <meta name="description" content="Portfolio de Facundo Alvarez, desarrollador web especializado en frontend.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="background"></div>
-  <div class="container">
-    <header>
+
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="logo">FA</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Inicio</a></li>
+        <li><a href="#about" class="nav-link">Sobre mí</a></li>
+        <li><a href="#education" class="nav-link">Formacion</a></li>
+        <li><a href="#skills" class="nav-link">Habilidades</a></li>
+        <li><a href="#projects" class="nav-link">Proyectos</a></li>
+        <li><a href="#contact" class="nav-link">Contacto</a></li>
+      </ul>
+      <div class="mobile-menu" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+
+  <section id="home" class="hero">
+    <div class="hero-content">
       <img src="fta.jpeg" alt="Facundo Alvarez" class="profile-img" />
       <h1>Facundo Alvarez</h1>
-      <p id="typing">Desarrollador Web & Bots de Discord</p>
-    </header>
+      <p class="subtitle" id="typing">Desarrollador Web & Bots de Discord</p>
+      <div class="cta-buttons">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-code"></i>
+          Ver Proyectos
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <i class="fas fa-envelope"></i>
+          Contactar
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <section class="card about">
-      <h2>Sobre mí</h2>
-      <p>Soy Facundo Alvarez, tengo 17 años y soy un desarrollador web autodidacta especializado en el desarrollo frontend. Me dedico a crear páginas web funcionales y atractivas utilizando HTML, CSS y JavaScript, cuidando tanto el diseño como la experiencia de usuario. Además, tengo experiencia en el desarrollo de bots personalizados para Discord con Discord.js, diseñados para gestionar comunidades y ofrecer comandos útiles de forma intuitiva.</p>
-     
-    </section>
 
-    <section class="card projects">
-      <h2>Proyectos</h2>
-     <div class="projects-grid">
-  <div class="project-card">
-    <img src="tum1.jpg" alt="Recuerdo para Mascota" class="project-thumb">
-    <h3>Zoe - Recuerdo para Mascota</h3>
-    <p>Sitio conmemorativo con imágenes y textos personalizados. Hecho con HTML, CSS y JavaScript.</p>
-    <a class="project-button" href="https://zoeeeee.netlify.app/" target="_blank">Ver sitio</a>
+  <section id="about" class="section fade-in">
+    <div class="section-header">
+      <h2 class="section-title">Sobre mí</h2>
+      <p class="section-subtitle">Desarrollador web autodidacta especializado en frontend y bots de Discord</p>
+    </div>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Soy Facundo Alvarez, tengo 17 años y soy un desarrollador web autodidacta especializado en el desarrollo frontend. Me dedico a crear páginas web funcionales y atractivas utilizando HTML, CSS y JavaScript, cuidando tanto el diseño como la experiencia de usuario.</p>
+        <br>
+        <p>Además, tengo experiencia en el desarrollo de bots personalizados para Discord con Discord.js, diseñados para gestionar comunidades y ofrecer comandos útiles de forma intuitiva.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-item">
+          <span class="stat-number">7+</span>
+          <span class="stat-label">Proyectos Completados</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">+6</span>
+          <span class="stat-label">Meses de Experiencia</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Autodidacta</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Disponible</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<section id="education" class="section fade-in">
+ <div class="section-header">
+   <h2 class="section-title">Formación</h2>
+   <p class="section-subtitle">Mi camino autodidacta en el desarrollo web</p>
+ </div>
+ <div class="education-timeline">
+   <div class="timeline-item">
+     <div class="timeline-date">
+       <span>Finales 2024</span>
+     </div>
+     <div class="timeline-content">
+       <div class="timeline-marker"></div>
+       <h3>Inicio Autodidacta</h3>
+       <p>Comencé mi journey como desarrollador web de forma autodidacta, viendo cursos en YouTube y siguiendo tutoriales para aprender los fundamentos de HTML, CSS y JavaScript.</p>
+     </div>
+   </div>
    
-  </div>
 
-  <div class="project-card">
-    <img src="tum2.jpg" alt="Web para MTA:SA" class="project-thumb">
-    <h3>Los Santos - Web MTA:SA</h3>
-    <p>Web informativa para servidor de MTA Roleplay con noticias y eventos.</p>
-    <a class="project-button" href="https://los-santos-mta.netlify.app/" target="_blank">Ver sitio</a>
- 
-  </div>
 
-  <div class="project-card">
-    <img src="tum3.jpg" alt="Landing Valorant" class="project-thumb">
-    <h3>NovaX - Landing Page Valorant</h3>
-    <p>Estadísticas y datos para comunidad competitiva de Valorant. Datos de las competiciones, estadisticas de jugadores, y mas.</p>
-    <a class="project-button" href="https://novax-valorant.netlify.app/" target="_blank">Ver sitio</a>
+   <div class="timeline-item">
+     <div class="timeline-date">
+       <span>Abril - Junio 2025</span>
+     </div>
+     <div class="timeline-content">
+       <div class="timeline-marker"></div>
+       <h3>Curso de Desarrollo Web Frontend</h3>
+       <p>Completé un curso intensivo de desarrollo web frontend, consolidando mis conocimientos y aprendiendo mejores prácticas en el desarrollo de interfaces modernas y responsivas.</p>
+     </div>
+   </div>
+ </div>
+</section>
+
+
+
+  <section id="skills" class="section fade-in">
+    <div class="section-header">
+      <h2 class="section-title">Habilidades</h2>
+      <p class="section-subtitle">Tecnologías y herramientas que domino</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-item">
+        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+        <div class="skill-name">HTML5</div>
+        <div class="skill-level">Avanzado</div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+        <div class="skill-name">CSS3</div>
+        <div class="skill-level">Avanzado</div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-level">Intermedio</div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon"><i class="fab fa-discord"></i></div>
+        <div class="skill-name">Discord.js</div>
+        <div class="skill-level">Intermedio</div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+        <div class="skill-name">Git</div>
+        <div class="skill-level">Básico</div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+        <div class="skill-name">Responsive</div>
+        <div class="skill-level">Intermedio</div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="projects" class="section fade-in">
+    <div class="section-header">
+      <h2 class="section-title">Proyectos</h2>
+      <p class="section-subtitle">Algunos de mis trabajos más destacados</p>
+    </div>
+    <div class="projects-grid">
+
+
+      <div class="project-card">
+        <img src="tum1.jpg" alt="Recuerdo para Mascota" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">Zoe - Recuerdo para Mascota</h3>
+          <p class="project-description">Sitio conmemorativo con galeria de imágenes y animaciones. Desarrollado con HTML, CSS y JavaScript.</p>
+          <div class="project-buttons">
+            <a href="https://zoeeeee.netlify.app/" target="_blank" class="project-btn project-btn-primary">
+              <i class="fas fa-external-link-alt"></i> Ver sitio
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="tum2.jpg" alt="Web para MTA:SA" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">Los Santos - Web MTA:SA</h3>
+          <p class="project-description">Web informativa para servidor de MTA Roleplay con noticias y eventos.</p>
+          <div class="project-buttons">
+            <a href="https://los-santos-mta.netlify.app/" target="_blank" class="project-btn project-btn-primary">
+              <i class="fas fa-external-link-alt"></i> Ver sitio
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="tum3.jpg" alt="Landing Valorant" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">NovaX - Landing Page Valorant</h3>
+          <p class="project-description">Plataforma de estadísticas para comunidad competitiva de Valorant con datos de competiciones y jugadores.</p>
+          <div class="project-buttons">
+            <a href="https://novax-valorant.netlify.app/" target="_blank" class="project-btn project-btn-primary">
+              <i class="fas fa-external-link-alt"></i> Ver sitio
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="tum5.jpg" alt="TasKPro" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">TasKPro - Gestor de Tareas</h3>
+          <p class="project-description">Aplicación para organizar tareas personales con prioridades, fechas límite y categorías.</p>
+          <div class="project-buttons">
+            <a href="https://taskpro-app.netlify.app/" target="_blank" class="project-btn project-btn-primary">
+              <i class="fas fa-external-link-alt"></i> Ver sitio
+            </a>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+     <div class="project-card">
+        <img src="gri.jpg" alt="Web GRIDEV" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">GRIDEV - Mi Empresa</h3>
+          <p class="project-description">Sitio Web de mi empresa propia GRIDEV, con formulario de contacto, y mas.</p>
+          <div class="project-buttons">
+            <a href="https://gridev.vercel.app/" target="_blank" class="project-btn project-btn-primary">
+              <i class="fas fa-external-link-alt"></i> Ver sitio
+            </a>
+          </div>
+        </div>
+           </div>
+
+
+    </div>
+  </section>
+
+
   
-  </div>
+  <section id="contact" class="section fade-in">
+    <div class="contact">
+      <div class="contact-content">
+        <h2 class="contact-title">¿Trabajamos juntos?</h2>
+        <p class="contact-text">Estoy disponible para nuevos proyectos y colaboraciones. No dudes en contactarme para discutir tus ideas.</p>
+        <div class="contact-methods">
+          <a href="https://gridev.vercel.app/#contacto" target="_blank" class="btn btn-primary">
+            <i class="fas fa-envelope"></i>
+            Enviar Email
+          </a>
+          <a href="https://discord.gg/wu95NHjfAN" target="_blank" class="btn btn-secondary">
+            <i class="fab fa-discord"></i>
+            Discord
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="project-card">
-  <img src="tum5.jpg" alt="TasKPro" class="project-thumb">
-  <h3>TasKPro - Gestor de Tareas</h3>
-  <p>Organizá tus tareas personales con prioridad, fechas límite, categorias, y 2 temas. Todo en un mismo lugar, claro y rápido.</p>
-  <a class="project-button" href="https://taskpro-app.netlify.app/" target="_blank">Ver sitio</a>
-</div>
-
-  <div class="project-card">
-    <img src="tum4.jpg" alt="Discord Bot" class="project-thumb">
-
-    <h3>MLC - Bot de Discord</h3>
-    <p>Bot con comandos personalizados para mejorar la gestión de comunidades.</p>
-    <a class="project-button" href="https://github.com/deltaccak/discord-bot" target="_blank">Ver código</a>
-  </div>
-</div>
-
-    </section>
-
-    <section class="card contact">
-      <h2>Contacto</h2>
-      <p>Mandame un mensaje a <a href="mailto:facundo.alvz07@gmail.com">facundo.alvz07@gmail.com</a> o contactame por Discord.</p>
-      <a class="contact-button" href="https://discord.gg/wu95NHjfAN" target="_blank">Ir a Discord</a>
-    </section>
-  </div>
 
   <footer>
-    <p>Hecho por Facundo Alvarez | <a href="https://github.com/deltaccak" target="_blank">GitHub</a></p>
+    <div class="footer-content">
+      <p>© 2024 Facundo Alvarez. Todos los derechos reservados.</p>
+      <p>
+        <a href="https://github.com/deltaccak" target="_blank" style="color: var(--accent-color);">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </p>
+    </div>
   </footer>
 
-  <button id="go-top"><i class="fas fa-arrow-up"></i></button>
-  <script src="script.js"></script>
+
+  <button class="scroll-top" id="scrollTop">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+
+  
+window.addEventListener('beforeunload', () => {
+  window.scrollTo(0, 0);
+});
+
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    window.scrollTo(0, 0);
+  }, 50);
+});
+
+
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+    const typing = document.getElementById('typing');
+    const phrases = ["Desarrollador Web", "Frontend Developer"];
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+      const currentPhrase = phrases[phraseIndex];
+      if (isDeleting) {
+        typing.textContent = currentPhrase.substring(0, charIndex--);
+        if (charIndex < 0) {
+          isDeleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+        }
+      } else {
+        typing.textContent = currentPhrase.substring(0, charIndex++);
+        if (charIndex > currentPhrase.length) {
+          isDeleting = true;
+        }
+      }
+      setTimeout(type, isDeleting ? 50 : 100);
+    }
+    type();
+
+
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.getElementById('nav-links');
+
+    mobileMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+
+    const navLinkElements = document.querySelectorAll('.nav-link');
+    navLinkElements.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        
+    
+        navLinks.classList.remove('active');
+        
+  
+        navLinkElements.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+        
+
+        targetSection.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      });
+    });
+
+ 
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+  
+    const scrollTopBtn = document.getElementById('scrollTop');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section[id]');
+      const scrollPos = window.scrollY + 100;
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+        const navLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+
+        if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+          navLinkElements.forEach(link => link.classList.remove('active'));
+          if (navLink) navLink.classList.add('active');
+        }
+      });
+    });
+
+ 
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        card.style.transform = 'translateY(-10px) scale(1.02)';
+      });
+      
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'translateY(0) scale(1)';
+      });
+    });
+
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+      img.addEventListener('load', () => {
+        img.style.opacity = '1';
+      });
+    });
+  </script>
 </body>
 </html>
