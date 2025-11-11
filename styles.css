@@ -290,7 +290,7 @@
     }
 
     .skill-item:hover {
-      transform: translateY(-5px);
+      transform: translateY(-3px);
       border-color: var(--accent-color);
     }
 
@@ -339,7 +339,7 @@
     }
 
     .project-card:hover .project-image {
-      transform: scale(1.05);
+      transform: scale(1.08);
     }
 
     .project-content {
