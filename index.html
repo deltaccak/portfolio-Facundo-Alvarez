@@ -71,7 +71,7 @@
           <span class="stat-label">Proyectos Completados</span>
         </div>
         <div class="stat-item">
-          <span class="stat-number">+10</span>
+          <span class="stat-number">+12</span>
           <span class="stat-label">Meses de Experiencia</span>
         </div>
         <div class="stat-item">
@@ -296,12 +296,12 @@
       </div>
 
       <div class="project-card">
-          <img src="legacy.jpg" alt="Legacy" class="project-image">
+          <img src="zazaaaaa.jpg" alt="Zaza" class="project-image">
           <div class="project-content">
-            <h3 class="project-title">LegacyLab Shop</h3>
-            <p class="project-description">Sitio web para una tienda de productos de MTA.</p>
+            <h3 class="project-title">ZAZA Company</h3>
+            <p class="project-description">Sitio web para una tienda de venta de canabbis</p>
             <div class="project-buttons">
-              <a href="https://www.legacylab.shop/home" target="_blank" class="project-btn project-btn-primary">
+              <a href="https://zaza-company.vercel.app/" target="_blank" class="project-btn project-btn-primary">
                 <i class="fas fa-external-link-alt"></i> Ver sitio
               </a>
             </div>
@@ -350,7 +350,7 @@
 
   <footer>
     <div class="footer-content">
-      <p>© 2025 Facundo Alvarez. Portfolio personal</p>
+      <p>© 2026 Facundo Alvarez. Portfolio personal</p>
       <p>
         <a href="https://github.com/deltaccak" target="_blank" style="color: var(--accent-color);">
           <i class="fab fa-github"></i> GitHub
@@ -365,7 +365,14 @@
   </button>
 
   <script>
-
+window.addEventListener('scroll', function() {
+  const nav = document.querySelector('nav');
+  if (window.scrollY > 50) {
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
+  }
+});
   
 window.addEventListener('beforeunload', () => {
   window.scrollTo(0, 0);

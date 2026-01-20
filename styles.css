@@ -29,30 +29,43 @@
     }
 
   
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(10, 15, 28, 0.9);
-      backdrop-filter: blur(10px);
-      z-index: 1000;
-      padding: 1rem 0;
-      transition: all 0.3s ease;
-    }
+nav {
+  position: fixed;
+  top: 20px; /* Separación del borde superior */
+  left: 50%; /* Centrado horizontal */
+  transform: translateX(-50%); /* Ajuste fino del centrado */
+  width: 90%; /* Ancho de la barra (ajustable) */
+  max-width: 1100px; /* Límite de ancho para pantallas grandes */
+  background: rgba(10, 15, 28, 0.75); /* Un poco más de transparencia */
+  backdrop-filter: blur(12px); /* Efecto de desenfoque */
+  z-index: 1000;
+  padding: 0.8rem 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* ESTILOS DE FLOTACIÓN */
+  border-radius: 50px; /* Bordes muy redondeados tipo píldora */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Sombra para profundidad */
+}
 
-    nav.scrolled {
-      background: rgba(10, 15, 28, 0.95);
-      border-bottom: 1px solid var(--border-color);
-    }
+/* Efecto al hacer scroll: se vuelve más pequeña o sólida */
+nav.scrolled {
+  top: 10px;
+  width: 85%;
+  background: rgba(10, 15, 28, 0.95);
+  border-bottom: 1px solid var(--accent-color);
+}
 
-    .nav-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+.nav-container {
+  max-width: 100%; /* El contenedor interno ya no necesita max-width fijo */
+  margin: 0 auto;
+  padding: 0 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ... Resto de tu código (logo, links, mobile-menu) se mantiene igual ... */
 
     .logo {
       font-size: 1.5rem;
